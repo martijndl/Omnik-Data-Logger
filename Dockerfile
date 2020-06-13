@@ -2,12 +2,14 @@ FROM alpine
 MAINTAINER martijndl
 
 #Install git, python, cron
-RUN apk add --update-cache bash git python3 dcron
+RUN apk add --update-cache bash git python3
 
 RUN cd /home && \
     git clone https://github.com/martijndl/Omnik-Data-Logger.git
 
 RUN touch /home/Omnik-Data-Logger/config.cfg
+
+RUN /usr/sbin/crontab /home/Omnik-Data-Logger/scheduler.txt
 
 RUN chmod 755 /home/Omnik-Data-Logger/entrypoint.sh
 

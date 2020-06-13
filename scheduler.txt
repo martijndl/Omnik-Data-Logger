@@ -1,0 +1,2 @@
+5 * * * * /usr/bin/python /home/Omnik-Data-Logger/OmnikExport.py >> /var/log/cron.log 2>&1 
+# This extra line makes it a valid cron
