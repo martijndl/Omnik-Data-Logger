@@ -14,3 +14,4 @@ config.cfg
 omnik-export.log
 Development/sim-config.cfg
 scheduler.txt
+build.sh
