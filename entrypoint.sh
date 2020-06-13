@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Start the run once job.
 echo "Docker container has been started"
