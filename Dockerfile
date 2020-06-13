@@ -9,7 +9,7 @@ RUN cd /home && \
 
 RUN touch /home/Omnik-Data-Logger/config.cfg
 
-RUN /usr/sbin/crontab /home/Omnik-Data-Logger/scheduler.txt
+RUN crontab /home/Omnik-Data-Logger/scheduler.txt
 
 RUN chmod 755 /home/Omnik-Data-Logger/entrypoint.sh
 
