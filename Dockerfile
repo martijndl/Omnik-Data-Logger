@@ -2,8 +2,8 @@ FROM alpine
 MAINTAINER martijndl
 
 #Install git, python, cron
-RUN apt-get update \
-    apt-get install -y git python cron
+RUN apk update \
+    apk add git python dcron
 
 RUN mkdir /home/Omnik-Data-Logger \
     cd /home/Omnik-Data-Logger \
