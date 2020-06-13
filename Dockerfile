@@ -2,7 +2,7 @@ FROM alpine
 MAINTAINER martijndl
 
 #Install git, python, cron
-RUN apk update \
+RUN apk update &&
     apk add git python dcron
 
 RUN cd /home && \
